@@ -19,7 +19,7 @@ int* getUniques(int maSize, int* messyArray) {
 	int* cleanArray = (int*) malloc((maSize + 1) * sizeof(int));
 	cleanArray[0] = caSize;
 
-	for (int maIndex = 1; maIndex < maSize; maIndex++) {
+	for (int maIndex = 0; maIndex < maSize; maIndex++) {
 		if (!isIn(messyArray[maIndex], cleanArray)) {
 			cleanArray[caIndex] = messyArray[maIndex];
 			caSize++;
